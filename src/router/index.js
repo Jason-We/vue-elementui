@@ -22,7 +22,12 @@ const routes = [
     path: '/table',
     name: 'Table',
     component: () => import('../views/Table.vue')
-  }
+  },
+  {
+    path: '/select',
+    name: 'Select',
+    component: () => import('../views/Treeselect.vue')
+  },
 ]
 
 const router = new VueRouter({
