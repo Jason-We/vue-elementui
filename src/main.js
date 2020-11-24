@@ -6,8 +6,9 @@ import './plugins/element.js'
 import JsonExcel from 'vue-json-excel'
 import excel_export from './utils/excel_export'
 import Print from 'vue-print-nb'
+import Printer from './utils/printer-electron'
 Vue.use(Print);
-
+Vue.use(Printer);
 Vue.config.productionTip = false
 Vue.component('downloadExcel', JsonExcel)
 Vue.prototype.excel_export = excel_export

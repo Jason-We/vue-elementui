@@ -27,7 +27,7 @@
       },
       doPrint() {
         console.log('获取后台数据，生成打印格式');
-
+        this.$Printer.printPage('aaa');
       }
     },
   }
